@@ -107,6 +107,6 @@ try {
 
 } catch {
     Write-Log -Message "Runbook failed. Error: $_" -MessageType 'Error'
-    throw $_
+    throw $_.Message
 }
 
